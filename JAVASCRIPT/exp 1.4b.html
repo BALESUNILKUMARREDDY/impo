@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Web programming </title>
+    </head>
+    <body>
+        <script type ="text/javascript">
+            var a = new Array();var i=0
+            var lim = parseInt(prompt("Enter the limit: "))
+            alert("Enter the elements")
+            for(i=0;i<lim;i++)
+            {
+                a[i]=prompt("Enter the "+i+" element: ")
+            }
+            a.sort();
+            for(i in a)
+            {
+                document.write("<br>"+a[i])
+            }
+        </script>
+    </body>
+</html>

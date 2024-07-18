@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script>
+           var a = new String(prompt("enter the string"));
+           document.write("Original String = "+a)
+           document.write("<br><br>String Concatination = "+a.concat(" in Web Programming"))
+           document.write("<br><br>Using Char At functon  = "+a.charAt(6))
+           document.write("<br><br>Using Char Code At functon ="+a.charCodeAt(6))
+           document.write("<br><br>Using from Char Code functon = "+String.fromCharCode(68,79,71))
+           document.write("<br><br>Using index of function  = "+a.indexOf("r",7))
+           document.write("<br><br>Using last index of function = "+a.lastIndexOf("r",9))
+           document.write("<br><br>Using substring function  = "+a.substring(0,4))
+        </script>
+    </body>
+</html>

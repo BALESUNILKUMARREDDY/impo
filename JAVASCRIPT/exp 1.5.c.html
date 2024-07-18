@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+            table,td
+            {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <p>CLICK THE BUTTON TO CREATE A TABLE A TR AND A TD ELEMENT.</p>
+        <button onclick="myFunction()">TRY IT</button>
+        <script>
+            function myFunction()
+            {
+                var x=document.createElement("table");
+                x.setAttribute("id","myTable");
+                x.setAttribute("bgcolor","blue");
+                document.body.appendChild(x);
+                var y=document.createElement("tr");
+                y.setAttribute("id","myTr");
+                document.getElementById("myTable").appendChild(y);
+                var z=document.createElement("td");
+                var t=document.createTextNode("1");
+                z.appendChild(t);
+                document.getElementById("myTr").appendChild(z);
+                var z=document.createElement("td");
+                var t=document.createTextNode("blue");
+                z.appendChild(t);
+                document.getElementById("myTr").appendChild(z);
+            }
+        </script>
+    </body>
+</html> 

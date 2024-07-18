@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+	table,td{
+	border:1px solid black;
+}
+</style>
+<script>
+function myFunction(){
+	var x=document.createElement("table");
+	x.setAttribute("id","myTable");
+	x.setAttribute("bgcolor","green");
+	document.body.appendChild(x);
+	var y=document.createElement("tr");
+	y.setAttribute("id","myTr");
+	document.getElementById("myTable").appendChild(y);
+	var z=document.createElement("td");
+	var t=document.createTextNode("1");
+	z.appendChild(t);
+	document.getElementById("myTr").appendChild(z);
+	var z=document.createElement("td");
+	var t=document.createTextNode("yellow");
+	z.appendChild(t);
+	document.getElementById("myTr").appendChild(z);
+	var x=document.createElement("table");
+        x.setAttribute("id","myTable1");
+        x.setAttribute("bgcolor","blue");
+        document.body.appendChild(x);
+        var y=document.createElement("tr1");
+        y.setAttribute("id","myTr1");
+        document.getElementById("myTable1").appendChild(y);
+        var z=document.createElement("td1");
+        var t=document.createTextNode("1");
+        z.appendChild(t);
+        document.getElementById("myTr1").appendChild(z);
+        var z=document.createElement("td1");
+        var t=document.createTextNode("blue");
+        z.appendChild(t);
+        document.getElementById("myTr1").appendChild(z);
+}
+</script>
+</head>
+<body>
+	<p>Click the button to create a TABLE, a TR and a TD element.</p>
+	<button onClick="myFunction()">Try it</button>
+</body>
+</html>
